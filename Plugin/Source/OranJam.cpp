@@ -135,11 +135,6 @@ void OranJam::SynthVoice::update(OranJam::SynthSound* sound, int midiNoteNumber)
     auto& LFOAmount = *currentState.getRawParameterValue(ParametersIDs::paramLFOAmount);
     amplitudeLfo.updateParameters(LFOFrequency, LFOAmount);
 
-    // Update internal buffer size
-    internalBufferSize = *currentState.getRawParameterValue(ParametersIDs::paramRenderBlockBufferSize);
-    oscillatorBuffer.setSize(1, internalBufferSize);
-    voiceBuffer.setSize(1, internalBufferSize);
-
     // Update filters
     // HP
     auto& hpCutoff = *currentState.getRawParameterValue(ParametersIDs::paramHPFilterCutOffFreq);

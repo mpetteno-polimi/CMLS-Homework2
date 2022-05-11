@@ -12,7 +12,6 @@ namespace ParametersGroupIDs
     const static juce::String lpfilterGroup{ "LPfilter" };
     const static juce::String peakfilterGroup{ "peakfilter" };
     const static juce::String outputGroup{ "output" };
-    const static juce::String bufferGroup{ "buffer" };
 }
 
 namespace ParametersIDs
@@ -27,7 +26,6 @@ namespace ParametersIDs
     const static juce::String paramOutputGain{ "OUTPUTGAIN" };
     const static juce::String paramLFOAmount{ "PARAMLFOGAIN" };
     const static juce::String paramLFOFrequency{ "PARAMLFOWAVEFREQUENCY" };
-    const static juce::String paramLFOWaveType{ "PARAMLFOWAVETYPE" };
     const static juce::String paramHPFilterCutOffFreq{ "HPFILTERCUTOFF" };
     const static juce::String paramHPFilterResonance{ "HPFILTERRESONANCE" };
     const static juce::String paramLPFilterCutOffFreq{ "LPFILTERCUTOFF" };
@@ -49,7 +47,6 @@ private:
     static void addEnvelopeParameters (juce::AudioProcessorValueTreeState::ParameterLayout& layout);
     static void addOscillatorsParameters (juce::AudioProcessorValueTreeState::ParameterLayout& layout);
     static void addLFOParameters(juce::AudioProcessorValueTreeState::ParameterLayout& layout);
-    static void addBufferSizeParameter(juce::AudioProcessorValueTreeState::ParameterLayout& layout);
     static void addNoiseParameters (juce::AudioProcessorValueTreeState::ParameterLayout& layout);
     static void addHPFiltersParameters (juce::AudioProcessorValueTreeState::ParameterLayout& layout);
     static void addLPFiltersParameters(juce::AudioProcessorValueTreeState::ParameterLayout& layout);

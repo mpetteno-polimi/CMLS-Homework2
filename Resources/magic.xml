@@ -77,11 +77,6 @@
                   margin="0" padding="0" border="0" caption-placement="centred-left"
                   slider-textbox="textbox-right" background-color="00000000" caption-color="FF000000"
                   slider-text-background="50FFFFFF" slider-text="FF000000" slider-thumb="FFFFA500"/>
-          <Slider caption="Buffer Size" parameter="PARAMRENDERBLOCKBUFFERSIZE"
-                  slider-type="linear-horizontal" margin="0" padding="0" border="0"
-                  caption-placement="centred-left" slider-textbox="textbox-right"
-                  background-color="00FFFFFF" caption-color="FF000000" slider-text-background="50FFFFFF"
-                  slider-text="FF000000" slider-thumb="FFFFA500"/>
         </View>
       </View>
       <View background-color="00000000" border="2" border-color="FFA6A6A6"

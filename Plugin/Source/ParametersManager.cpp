@@ -9,7 +9,6 @@ juce::AudioProcessorValueTreeState::ParameterLayout ParametersManager::createPar
     ParametersManager::addEnvelopeParameters(layout);
     ParametersManager::addOscillatorsParameters(layout);
     ParametersManager::addLFOParameters(layout);
-    ParametersManager::addBufferSizeParameter(layout);
     ParametersManager::addNoiseParameters(layout);
     ParametersManager::addOutputParameters(layout);
     ParametersManager::addHPFiltersParameters(layout);
@@ -66,16 +65,6 @@ void ParametersManager::addLFOParameters(juce::AudioProcessorValueTreeState::Par
     group->addChild(std::make_unique<juce::AudioParameterFloat>(ParametersIDs::paramLFOFrequency, "LFO Frequency",
         juce::NormalisableRange<float>(0.1f, 10.0f, 0.01f), 1.0f));
     layout.add(std::move(group));
-}
-
-
-void ParametersManager::addBufferSizeParameter(juce::AudioProcessorValueTreeState::ParameterLayout & layout)
-{
-     auto group = std::make_unique<juce::AudioProcessorParameterGroup>(ParametersGroupIDs::bufferGroup, "BufferSize", "|");
-     group->addChild(std::make_unique<juce::AudioParameterFloat>(ParametersIDs::paramRenderBlockBufferSize, "Buffer Size",
-            juce::NormalisableRange<float>(1.0f, 64.0f, 1.0f), 1.0f));
-    layout.add(std::move(group));
-
 }
 
 void ParametersManager::addNoiseParameters (juce::AudioProcessorValueTreeState::ParameterLayout& layout)
