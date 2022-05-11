@@ -18,7 +18,6 @@ The available controls are graphically divided in six main groups:
 - The **Oscillators** group, composed by:
   - Three **Wave selectors**, one for each oscillator, that allow switching between Sinusoidal, Saw and Square waveform and the relative **Gain knob**, controlling the corresponding Volume.
   - The **Noise Gain**, controlling the level of a random process that is added in cascade after the signal created by the oscillators and conceptually acting as an additional oscillator as well.
-  - The **Buffer Size**, a control that tweaks the size of the buffers used in the processing. Setting it to 1 leads to standard sample by sample processing, while increasing its value introduces artifacts similar to the ones introduced by aliasing.
 
 - The **Envelope** group, composed by **Attack**, **Decay**, **Sustain** and **Release** knobs, allows the user to shape the amplitude of the played note in four moments linear regions with a linear behavior.
 
