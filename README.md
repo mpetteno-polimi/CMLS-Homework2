@@ -1,5 +1,6 @@
 # OranJam
 **OranJam** is an **instrument plugin** which implements a **polyphonic subtractive synthesizer**. The software was implemented in **C++ programming language** with the aid of **JUCE framework**, a very powerful **multi-platform** and **cross-standard** library which supports different operating systems (MacOS, Windows, Linux) and plugin standards available on the market today (VST, VST3, Audio Unit, Audio Unit V3, RTAS, AAX). The **DSP chain** includes several functional blocks: an **oscillators bank**, a **white noise generator**, an **ADSR envelope**, a **filters bank** and a **LFO**. A **Graphical User Interface** (Figure below) enables the user to control available parameters, such as Waveform for each oscillator, CutOff Frequency and Resonance for each filter.
+Within the **Release** folder, three release builds of OranJam instrument plugin are available for instant use: Audio Unit (AU), VST3 and standalone.
 
 <p align="center">
   <img width="800" height=auto src="./Assets/images/OranJamGUI.png">
@@ -40,3 +41,5 @@ The package **foleys_gui_magic** is imported in order to provide all the functio
 <p align="center">
   <img width="600" height=auto src="./Assets/graphs/Signal_Flow_Diagram.png">
 </p>
+
+**You're now ready to jump into OranJam wonderful world! Let's play some music!**
