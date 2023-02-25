@@ -1,0 +1,6 @@
+[submodule "Ext/foleys-gui-magic"]
+	path = Ext/foleys-gui-magic
+	url = https://github.com/ffAudio/foleys_gui_magic
+[submodule "Ext/JUCE"]
+	path = Ext/JUCE
+	url = https://github.com/juce-framework/JUCE.git
